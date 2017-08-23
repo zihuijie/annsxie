@@ -2,9 +2,11 @@
   "name": "annsxie",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://zihuijie.github.io/annsxie",
   "dependencies": {
     "color": "^2.0.0",
     "firebase": "^4.3.0",
+    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-helmet": "^5.1.3",
@@ -23,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --write 'src/**/*.js'"
+    "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --write 'src/**/*.js'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "eslint": "^4.5.0",
