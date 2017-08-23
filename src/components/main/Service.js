@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { colors } from '../../utils/constants';
 import servicejpg from './service.jpg';
 
-
 const Wrapper = styled.section`
 width: 80%;
 margin: auto;
@@ -27,44 +26,40 @@ const Box = styled.div`
   padding: 20px;
   background: ${colors.BACKGROUND_GREY};
   border: ${colors.LIGHT_GREY} solid 1px;
-
 `;
 
 const Image = styled.div`
-positon: relative;
-z-index:1;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  positon: relative;
+  z-index: 1;
   padding: 20px;
-  background:url(${servicejpg}) no-repeat;
-  background-size:contain;
+  background: url(${servicejpg}) no-repeat;
+  background-size: contain;
   background-position: center;
- width: 60%;
-  height: 400px;  
- &:hover {
-   transform: scale(1.05);
-   &:after {
-     opacity: 0;
-   };
-   }
+  width: 60%;
+  height: 400px;
+  &:hover {
+    transform: scale(1.05);
+    &:after {
+      opacity: 0;
+    }
+  }
 `;
 const Header = styled.h1`text-align: left;`;
 
 const Service = () =>
- <div>
-  <Wrapper>
-    <Header> Services</Header>
-    <Box>
-      <ul>
-        <li>Bookkeeping</li>
-        <li>Income Tax return</li>
-        <li>Managing Payroll</li>
-      </ul>
-  
-      <Image />
+  <div>
+    <Wrapper>
+      <Header> Services</Header>
+      <Box>
+        <ul>
+          <li>Bookkeeping</li>
+          <li>Income Tax return</li>
+          <li>Managing Payroll</li>
+        </ul>
 
-    </Box>
-  </Wrapper>
+        <Image />
+      </Box>
+    </Wrapper>
   </div>;
 
 export default Service;

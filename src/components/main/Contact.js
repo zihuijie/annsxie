@@ -20,11 +20,15 @@ margin: auto;
   grid-template-columns: 1fr;
 text-align: left; 
 padding: 2em;
+
 color: ${colors.FONT_DARK};
 box-shadow: 0 0 20px 0 ${colors.FONT_DARK};
 font-family: 'Source Sans Pro', sans-serif;
- @media (min-width: 950px) {
+ @media (min-width: 1300px) {
     grid-template-columns: 1fr 2fr;         
+  };
+  @media (max-width: 700px) {
+    font-size: 0.8em;
   };
   } 
 `;
