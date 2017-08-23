@@ -9,6 +9,7 @@
 # production
 /build
 /src/components/main/db
+/functions/config.json.dist
 # misc
 .DS_Store
 .env.local

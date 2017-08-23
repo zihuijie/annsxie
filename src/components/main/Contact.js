@@ -32,7 +32,7 @@ font-family: 'Source Sans Pro', sans-serif;
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -53,7 +53,7 @@ const Header = styled.div`
 `;
 
 const List = styled.ul`
-  text-align: center;
+  text-align: left;
   list-style: none;
   padding: 0;
   letter-spacing: 0.35em;
