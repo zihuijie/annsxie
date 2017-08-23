@@ -8,7 +8,6 @@ import FaPhone from 'react-icons/lib/fa/phone';
 import FaFax from 'react-icons/lib/fa/fax';
 import FaWechat from 'react-icons/lib/fa/wechat';
 
-
 import { colors, contactinfo } from '../../utils/constants';
 
 import ContactForm from './ContactForm';
@@ -54,34 +53,31 @@ const Header = styled.div`
 `;
 
 const List = styled.ul`
-    text-align: center;
+  text-align: center;
   list-style: none;
   padding: 0;
   letter-spacing: 0.35em;
   span {
     margin-left: 0.8em;
-  };
+  }
   li {
     margin-bottom: 0.8em;
-  };
+  }
   .icon {
     display: inline-block;
     width: 2em;
     height: 2em;
     color: inherit;
-  };
+  }
   .title {
     font-size: 1.3em;
     font-weight: bold;
-    font-family:'Source Sans Pro','serif';
-
+    font-family: 'Source Sans Pro', 'serif';
   }
 `;
 
 class Contact extends React.Component {
-  submit = values => {
-    
-  };
+  submit = values => {};
 
   render() {
     return (
@@ -89,16 +85,17 @@ class Contact extends React.Component {
         <Header>
           <h1> Ann S. Xie Professional Corporation</h1>
           <p>Chartered Professional Accountant</p>
-        
         </Header>
         <Wrapper>
           <Box>
-          <h1>Contact Details</h1>
+            <h1>Contact Details</h1>
             <List>
-            <li> 
-            <FaUser color={`${colors.FONT_DARK}`} className="icon" />
-            <span className="title">{contactinfo.name} {contactinfo.jobTitle}</span>
-            </li>
+              <li>
+                <FaUser color={`${colors.FONT_DARK}`} className="icon" />
+                <span className="title">
+                  {contactinfo.name} {contactinfo.jobTitle}
+                </span>
+              </li>
               <li>
                 <FaRoad color={`${colors.FONT_DARK}`} className="icon" />
                 <span>
