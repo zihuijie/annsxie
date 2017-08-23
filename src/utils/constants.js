@@ -32,6 +32,8 @@ export const colors = {
 };
 
 export const contactinfo = {
+  name: 'Ann S. Xie',
+  jobTitle: 'CPA, CGA',
   address: 'Calgary, Alberta CA',
   email: 'annxie@shaw.ca',
   phone: '(403) 835-6456',
