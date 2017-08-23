@@ -1,0 +1,37 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Indie Flower', cursive;
+*/
+
+* {
+  boxing-sizing: border-box;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {  
+  background-image: linear-gradient(to top, rgba(0,0,0,0.05), rgba(0,0,0,0)), url('utils/images/bg01.png');
+  background-color: #f7f7f7;
+  background-position: top left, top left;
+  background-repeat: repeat-x, repeat;
+  background-size: 100% 100em, auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em; 
+  font-weight: 300;
+  line-height: 2.25em;
+  color: #696969;
+}
+
