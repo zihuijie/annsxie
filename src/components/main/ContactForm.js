@@ -107,7 +107,13 @@ class ContactForm extends Component {
     initialize(this.state);
   }
   render() {
-    const { handleSubmit, pristine, reset, submitting, submitSucceeded } = this.props;
+    const {
+      handleSubmit,
+      pristine,
+      reset,
+      submitting,
+      submitSucceeded,
+    } = this.props;
 
     const submit = values => {
       const { reset } = this.props;
@@ -191,7 +197,11 @@ class ContactForm extends Component {
             />
           </div>
         </div>
-          { submitSucceeded ? <Alert><span>Message Sent Success!</span></Alert>: null }
+        {submitSucceeded
+          ? <Alert>
+              <span>Message Sent Success!</span>
+            </Alert>
+          : null}
         <div className="button">
           <Button type="submit" disabled={pristine || submitting}>
             Submit
@@ -203,7 +213,6 @@ class ContactForm extends Component {
           >
             Clear Values
           </Button>
-      
         </div>
       </Form>
     );
